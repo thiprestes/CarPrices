@@ -1,5 +1,8 @@
 package br.com.alura.CarPrices.service;
 
+import java.util.List;
+
 public interface IDataConversion {
-    <T> T GetData(String json, Class<T> classe);
+    <T> T getData(String json, Class<T> classe);
+    <T> List<T> getList(String json, Class<T> classe);
 }
